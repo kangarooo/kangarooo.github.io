@@ -1,0 +1,35 @@
+article {
+    display: grid;
+    /* grid-row: 20%; */
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+article>.articles {
+    border: black solid 1px;
+
+
+
+}
+
+.articles>a {
+    color: white;
+}
+
+.articles>a:hover {
+    color: rgb(172, 172, 172);
+}
+img {
+    width: 100%;
+    height: auto;
+  }
+  @media (min-width: 600px) {
+
+    article {
+        display: grid;
+        /* grid-row: 20%; */
+        gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+  }
