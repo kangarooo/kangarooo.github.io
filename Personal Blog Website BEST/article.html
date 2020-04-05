@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
     <link rel="stylesheet" href="css/style.css">
     <style>
-.author{
-    font-weight: bold;
-}
-.date{
-    text-decoration: underline;
-    color: #00ff00;
-}
+        .author {
+            font-weight: bold;
+        }
 
+        .date {
+            text-decoration: underline;
+            color: #00ff00;
+        }
     </style>
 </head>
 
@@ -29,13 +29,14 @@
     <div class="wrapper">
         <header>
             <h1>
-                The header.
+                <a href="index.html">The header.</a>
             </h1>
         </header>
         <articles>
 
             <h2>Article 1</h2>
-            <div class="author">by Jānis</div><div class="date">2020</div>
+            <div class="author">by Jānis</div>
+            <div class="date">2020</div>
             <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach
                 avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin
                 horseradish spinach carrot soko. </p>
@@ -54,8 +55,15 @@
 
         </articles>
         <aside>
-            <i> <b>About</b></i><br>
+            <i> <b>Sign up</b></i><br>
             Technologically made blog about nature
+            <form action="/action_page.php">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"><br><br>
+                <input type="submit" value="Submit">
+              </form>
         </aside>
         <footer>
             <u>The footer. 2020</u>
