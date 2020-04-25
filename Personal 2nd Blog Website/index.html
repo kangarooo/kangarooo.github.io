@@ -7,62 +7,159 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .author {}
+  
+        figure {
+            padding: 0px;
+            margin: 0px;
+        }
 
-        .articles {
-            display: flex;
-            flex-direction: row;
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header  header"
+                "nav    main    aside"
+                "nav    article aside"
+                "footer footer  footer";
+        }
+
+        header {
+            grid-area: header;
             justify-content: space-evenly;
+            
         }
 
-        .article {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            max-width: 188px;
+        main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  background-color: #fff;
+  color: #444;
+  /* background-color: #444;
+  color: #fff; */
+  border-radius: 5px;
+}
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 1vw;
+            /* grid-template-areas:
+    "header header header"
+    "nav content side"
+    "footer footer footer"; */
+            /* height: 100vh; */
+
+            /* display: flex; */
+            /* flex-direction: row; */
+            /* justify-content: space-evenly; */
+            grid-area: main;
+            /* flex: 1;
+            display: flex; */
+            /* flex-direction: column; */
+            /* max-width: 188px; */
             text-align: justify;
-     
+            padding: 1vw;
         }
-        figure{
-                padding: 0px;
-                margin: 0px;
-            }
+        article {
+            grid-area: article;
+        }
+
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        nav {
+            max-width: 50px;
+            /* width: 200px; */
+            grid-area: nav;
+        }
+
+article, aside, footer, nav, main, header{
+    padding: 1vw;
+}
+.article {
+width: 100%;
+
+}
+img {
+    width: 100%;
+    height: auto;
+  }
+
     </style>
 </head>
 
 <body>
+    <div class="container">
+        <header>
 
-    <div class="articles">
+            <u><b><i>The blog </i></b></u>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quasi alias eius harum qui laborum amet dolorum esse natus quam.
+        </header>
+        <aside> Subscribe to blog </aside>
 
-        <div class="article">
-            <figure><img src='https://dummyimage.com/188x105.jpg' alt='' />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eos est?</p>
-            
-        </div>
+
+
+        <nav>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>NAVI<br>
+
+        </nav>
+        <main>
+            <div class="article">
+                <figure><img src='https://dummyimage.com/188x105.jpg' alt='' />
+                    <figcaption>Nice sunset</figcaption>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eos est?</p>
+                </figure>
+            </div>
     
+            <div class="article">
+                <figure><img src='https://dummyimage.com/188x105.jpg' alt='' />
+                    <figcaption>Nice sunset</figcaption>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eos est?</p>
+                </figure>
+            </div>
+            <div class="article">
+                <figure><img src='https://dummyimage.com/188x105.jpg' alt='' />
+                    <figcaption>Nice sunset</figcaption>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eos est?</p>
+                </figure>
+            </div>
+            <div class="article">
+                <figure><img src='https://dummyimage.com/188x105.jpg' alt='' />
+                    <figcaption>Nice sunset</figcaption>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eos est?</p>
+                </figure>
+            </div>
+            <div class="article">
+                <figure><img src='https://dummyimage.com/188x105.jpg' alt='' />
+                    <figcaption>Nice sunset</figcaption>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eos est?</p>
+                </figure>
+            </div>
+            <div class="article">
+                <figure><img src='https://dummyimage.com/188x105.jpg' alt='' />
+                    <figcaption>Nice sunset</figcaption>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eos est?</p>
+                </figure>
+            </div>
+        </main>
+        <article>
+            <b><u><i><div class="author">Article By <a href="#">Jānis</a> on <a href="#">2020</a></div>
+                    </i></u></b>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium velit cumque exercitationem quos, recusandae rerum soluta maiores non corrupti aliquam, veritatis vero debitis, nostrum amet modi incidunt cupiditate. Non, impedit dolorem. Voluptas maxime distinctio facilis cupiditate reprehenderit modi sit expedita asperiores neque, atque natus obcaecati corporis nesciunt consequatur laboriosam illo.
+            </div>
+            
+        </article>
 
-        <div class="article">
-            <img src='https://dummyimage.com/188x105.jpg' alt='' />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eos est?
-            </p>
-        </div>
-        <div class="article">
-            <img src='https://dummyimage.com/188x105.jpg' alt='' />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eos est?
-            </p>
-        </div>
-    <div class="article">
-        <img src='https://dummyimage.com/188x105.jpg' alt='' />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eos est?
-        </p>
+        <footer>
+            C Kangarooo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita ex culpa facere, placeat tenetur, non repudiandae nihil et maxime aliquid numquam labore voluptates ipsam provident. Fugit magni ea quisquam incidunt? Perspiciatis harum neque quam voluptatum dolor minima nulla ullam, voluptates doloremque ducimus cupiditate consequatur ratione est, facilis rerum cumque exercitationem molestias officia soluta debitis mollitia dolores quidem ex. Quas, ea!
+
+        </footer>
+
     </div>
-    </div>
-
-
-
-    <div class="author"></div>
-
-
 </body>
 
 </html>

@@ -5,6 +5,12 @@ figure, figcaption{
     padding: 0px;
     margin: 0px;
 }
+.sticky {
+    position: sticky;
+    top: 0;
+    
+  }
+  
 body {
     margin: 0;
     padding: 4px;
