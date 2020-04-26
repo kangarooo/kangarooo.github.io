@@ -1,0 +1,13 @@
+
+
+article, aside, footer, nav, main, header{
+    padding: 1vw;
+}
+.article {
+width: 100%;
+
+}
+img {
+    width: 100%;
+    height: auto;
+  }
