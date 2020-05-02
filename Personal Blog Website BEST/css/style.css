@@ -6,6 +6,10 @@ aside>form {
     display: flex;
 }
 
+aside * {
+    color: rgb(145, 145, 145);
+}
+
 .fa {
     padding: 20px;
     font-size: 30px;
