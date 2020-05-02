@@ -1,7 +1,17 @@
 @import url("grid.css");
 @import url("articles.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+h1 {
+    font-size: 6vw;
+}
 
+h2 {
+    font-size: 3vw;
+}
+
+h3 {
+    font-size: 2.5vw;
+}
 
 .fa {
     padding: 20px;
@@ -10,38 +20,50 @@
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-  }
-  
-  .fa-facebook {
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
     background: #3B5998;
     color: white;
-  }
-  
-  .fa-twitter {
+}
+
+.fa-twitter {
     background: #55ACEE;
     color: white;
-  }
-  
-  .fa-google {
+}
+
+.fa-google {
     background: #dd4b39;
     color: white;
-  }
-  
-  .fa-linkedin {
+}
+
+.fa-linkedin {
     background: #007bb5;
     color: white;
-  }
-  
-  .fa-youtube {
+}
+
+.fa-youtube {
     background: #bb0000;
     color: white;
-  }
-  
-  .fa-instagram {
+}
+
+.fa-instagram {
     background: #125688;
     color: white;
-  }
+}
+
+
+/* some error if this is in front of css */
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: rgb(184, 184, 184);
+    }
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
